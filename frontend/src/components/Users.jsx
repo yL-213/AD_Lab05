@@ -15,6 +15,7 @@ function Users() {
   const [textInput, setTextInput] = useState({
     uid: "",
     username: "",
+    
   });
 
   const fetchAllUsersAndSetState = () => {
@@ -70,6 +71,8 @@ function Users() {
           >
             <div>ID: {user.id}</div>
             <div>{user.username}</div>
+            <div>{user.email}</div>
+            <div>{user.birthday}</div>
           </div>
         ))}
       </div>
